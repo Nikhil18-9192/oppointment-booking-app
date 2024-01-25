@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 import './App.scss';
 import Header from './components/Header/Header';
-import ShowOppointements from './components/ShowOppointments.js/ShowOppointements';
+import ShowOppointements from './components/ShowAppointments.js/ShowOppointements';
 import GlobalContext from './components/context/CreateContext';
 import {  CSSTransition } from "react-transition-group";
 import Phonenav from './components/Phonenav/Phonenav';

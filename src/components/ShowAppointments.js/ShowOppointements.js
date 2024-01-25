@@ -1,7 +1,7 @@
 import React, {  useEffect, useState } from "react";
 import "./ShowOppointments.scss";
 import Calendar from 'react-calendar';
-import OppointementList from "../OppointementList/OppointementList";
+import OppointementList from "../AppointementList/OppointementList";
 import axios from "axios";
 import ShowBooking from "../ShowBooking/ShowBooking";
 
