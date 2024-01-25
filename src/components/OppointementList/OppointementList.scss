@@ -1,0 +1,124 @@
+@import '../../App.scss';
+
+.oppointement_list{
+    position: relative;
+    padding: 24px;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+
+    .title{
+        font-size: 12px;
+        font-weight: 600;
+        color: $text-color;
+        margin-bottom: 6px;
+        text-transform: uppercase;
+        
+    }
+
+    .time_varients{
+        border-bottom: 1px solid #C7C9D9;
+        padding-bottom: 22px;
+        margin-bottom: 8px;
+       
+        .custome_select{
+            position: relative;
+            width: 100%;
+            height: 100%;
+            select{
+                width: 100%;
+                height: 42px;
+                border: 1px solid #C7C9D9;
+                background: #FAFAFC;
+                border-radius: 10px;
+                padding: 12px;
+                color: $primary;
+                outline: none;
+                -webkit-appearance: none; /* Remove default arrow in Chrome/Safari/Edge */
+                -moz-appearance: none; /* Remove default arrow in Firefox */
+                appearance: none;
+                
+            }
+            &::after{
+                content: '\25BC'; /* Unicode character for down arrow */
+                position: absolute;
+                top: 50%;
+                right: 12px;
+                transform: translateY(-50%);
+                color: $primary;
+                
+            }
+        }
+       
+    }
+    .slots{
+        width: 100%;
+        box-sizing: border-box;
+        .slot_list{
+            width: 100%;
+            height: 100%;
+            max-height: 300px;
+            overflow-y: scroll;
+            overflow-x: hidden;
+            box-sizing: border-box;
+            @include for-phone-only{
+                max-height: 130px;
+                margin-bottom: 30px;
+            }
+            &::-webkit-scrollbar {
+                width: 8px; 
+
+              }
+              
+            &::-webkit-scrollbar-thumb {
+                background-color: $primary;
+                border-radius: 6px; 
+              }
+              
+            &::-webkit-scrollbar-track {
+                background-color: #f0f0f0; 
+              }
+
+            .slot{
+                width: 100%;
+                height: 48px;
+                border: 1px solid $primary;
+                border-radius: 10px;
+                margin-bottom: 14px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: $primary;
+                font-size: 14px;
+                font-weight: 600;
+                cursor: pointer;
+                transition: 0.4s ease all;
+
+                .icon{
+                    font-size: 28px;
+                    font-weight: 600;
+                    display: none;
+                    
+                }
+            }
+            .active{
+                background-color: $primary;
+                color: #fff;
+                display: flex;
+                justify-content: space-between;
+                border: 1px solid transparent;
+
+                p{
+                    margin-left: 14px;
+                }
+                
+                svg{
+                    margin-right: 14px;
+                }
+                .icon{
+                    display: block;
+                }
+            }
+        }
+    }
+}

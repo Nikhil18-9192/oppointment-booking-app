@@ -1,0 +1,78 @@
+@mixin for-phone-only {
+  @media (max-width: 599px) {
+    @content;
+  }
+}
+@mixin for-tablet-portrait-up {
+  @media (min-width: 600px) {
+    @content;
+  }
+}
+@mixin for-tablet-landscape-up {
+  @media (min-width: 900px) {
+    @content;
+  }
+}
+@mixin for-desktop-up {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+@mixin for-big-desktop-up {
+  @media (min-width: 1800px) {
+    @content;
+  }
+}
+@mixin for-tablet-only {
+  @media (min-width: 600px) and (max-width: 768px) {
+    @content;
+  }
+}
+
+.app_container{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image:linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.8)), url('./static/bg-circle1.png'),url('./static/bg-circle2.png'),url('./static/g1.png'), url('./static/g2.png');
+  background-position: right top, top right, bottom left, bottom left, center right;
+  background-repeat: no-repeat;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+  margin: 0;
+}
+
+
+.phone-navbar-enter {
+  transform: translateX(100%);
+}
+
+.phone-navbar-enter-active {
+  transform: translateX(0);
+  transition: transform 300ms ease;
+}
+
+.phone-navbar-exit {
+  transform: translateX(0);
+}
+
+.phone-navbar-exit-active {
+  transform: translateX(100%);
+  transition: transform 300ms ease;
+}
+
+.link_btn{
+  width: 150px;
+  height: 40px;
+  border: 1px solid #378760;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 40px;
+  background: #378760;
+  color: #fff;
+  cursor: pointer;
+}
+
+
+$primary:#378760;
+$text-color:#555770;
