@@ -1,6 +1,10 @@
-# Your App Title
+# Appointment Booking App
 
 Welcome to Appointment Booking – a modern React application!
+
+# Online App Link
+
+https://oppointment-booking.netlify.app/
 
 ## Getting Started
 
@@ -18,7 +22,7 @@ Make sure you have the following installed:
 1. Clone the repository to your local machine:
 
     ```bash
-    git clone https://github.com/your-username/your-app.git
+    git clone https://github.com/Nikhil18-9192/oppointment-booking-app.git
     ```
 
 2. Navigate to the project directory:
