@@ -4,7 +4,7 @@ Welcome to Appointment Booking – a modern React application!
 
 # Online App Link
 
-https://oppointment-booking.netlify.app/
+https://appointment-booking-oppointo.netlify.app/
 
 ## Getting Started
 
